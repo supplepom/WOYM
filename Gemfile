@@ -57,3 +57,8 @@ gem 'devise'
 gem "refile", require: "refile/rails", github: 'manfe/refile'
 gem "refile-mini_magick"
 gem "bulma-rails"
+gem "aws-sdk-s3", require: false
+
+group :production do
+  gem 'unicorn', '5.4.1'
+end
